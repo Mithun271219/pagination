@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         <main>
           {visibleTasks.map((task) => {
-            return <div key={task.id}>{task.title}</div>;
+            return <div key={task.id}>{`${task.id}. ${task.title}`}</div>;
           })}
           <p>
             <span
