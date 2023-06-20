@@ -31,6 +31,13 @@ export default function Home() {
     <>
       <div className="App">
         <h1>pagination</h1>
+        <div>
+          <select name="" id="" onClick={({ target }) => { setTasksperpage(target.value) }} >
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+          </select>
+        </div>
         <main>
           {visibleTasks.map((task) => {
             return <div key={task.id}>{task.title}</div>;
